@@ -1,2 +1,10 @@
 *.~ml
 *.dia~
+*.out
+*.toc
+*.aux
+*.log
+*.pdf
+*.synctex.gz
+*.bbl
+*.blg

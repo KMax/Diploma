@@ -1,4 +1,30 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[specialist, subf, href, colorlinks=false]{disser}
+
+\usepackage[a4paper, mag=1000, includefoot,
+  left=2cm, right=1cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm
+]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\ifpdf\usepackage{epstopdf}\fi
+
+% Использовать полужирное начертание для векторов
+\let\vec=\mathbf
+
+% Включать подсекции в оглавление
+\setcounter{tocdepth}{2}
+
+\graphicspath{{fig/}}
+
 \begin{document}
-Содержание
+
+\tableofcontents
+
+\input{intro}
+\input{chapter1}
+\input{conclusion}
+
+\bibliography{thesis}
+\bibliographystyle{gost705}
 \end{document}
+
